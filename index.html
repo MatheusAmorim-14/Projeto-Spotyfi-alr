@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- a tag <html> é usada para definir o início e o fim do documento HTML-->
+
+<head> <!-- Define as informações que -->
+    <meta charset="UTF-8">
+    <!-- Classe <meta> é usada como um comando que fornece informacões sobre uma página web para o mecanismo de busca-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soptify Imersão</title> <!-- Auto explicativo, é o título da página que fica lá em cima-->
+    <link rel="stylesheet" href="./src/assets/styles/reset.css">
+    <link rel="stylesheet" href="./src/assets/styles/vars.css">
+    <link rel="stylesheet" href="./src/assets/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="https://fontawesome.com/kits/ea26112bf3/icons" /> <!--Não entnedi pq deu erro aqui-->
+    <script src="https://kit.fontawesome.com/ea26112bf3.js" crossorigin="anonymous"></script>
+</head>
+
+<body> <!-- É onde vai está todo o conteúdo visível da página -->
+
+    <div class="sidebar"> <!-- A tag <div> como uma divisão na página para fins estéticos-->
+
+        <nav class="sidebar__navigation"> <!-- A tag <nav> cria um menu de navegação -->
+            <div class="logo">
+                <a>
+                    <img src="./src/assets/icons/logo-spotify.png"
+                        alt="logo do spotify"><!-- A tag <img> é usada para adicionar imagens-->
+                    <!-- usa ./ para pesquisar a imagem dentro da pasta, 
+                 obs: importnate a pasta já está dentro do vscode e no fomrato de PNG -->
+                </a>
+            </div>
+            <ul> <!-- Serve para criar listas não ordenadas <ul> = unordered list-->
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Início</span> <!-- A tag <span> é um container genérico para agrupar textos-->
+                    </a>
+                </li> <!--E os itens da lista são definidos com a tag <li> (list item) -->
+                <li>
+                    <a href=""> <!--A tag <a> é possível definir links com ela -->
+                        <span class="fa fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="library">
+            <div class="library__content">
+                <!--usa o __ para indicar que algo pertence a algo. 
+            Exemplo: content tá dentro da library, se eu quiser dizer que tem algo dentro do content, seria : library__content__X-->
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span> Sua Biblioteca</span>
+                </button>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                    <button class="section-playlist__button">
+                        <span> Criar Playlist</span>
+                    </button>
+                </div>
+            </section>
+            <div class="cookies"> <a href="">cookies</a></div>
+        </div>
+        <div class="languages">
+            <button class="languages__button">
+                <span class="fa fa-globe"></span>
+                <span>Português Brasil</span>
+            </button>
+        </div>
+    </div>
+ </div>
+ 
+ <main>
+    <div class="main-container">
+        <nav class="header__navigation">
+            <div class="navigation">
+                <button class="arrow-left">
+                    <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                </button>
+                <button class="arrow-right">
+                    <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                </button>
+            </div>
+            <div class="header__search">
+                <img src="./src/assets/icons/search.png" alt="">
+                <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+            </div>
+            <div class="header__login">
+                <button class="subscribe">Inscreva-se</button>
+                <button class="login">Entrar</button>
+            </div>
+        </nav>
+    </div>
+</main>
+<footer class="disclaimer-premium">
+    <div class="text">
+        <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+        <p class="disclaimer-premium__subtitle">
+            Inscreva-se para curtir música ilimitada e podcasts só com alguns
+            anúncios. Não precisa de cartão de crédito.
+        </p>
+    </div>
+    <div class="button">
+        <button type="button">Inscreva-se grátis</button>
+    </div>
+</footer>
+</body>
+
+</html>
